@@ -55,6 +55,9 @@ body {
 .header .links:hover .burger_icon span:nth-child(2) {
   width: 100%;
 }
+.header .links:hover ul {
+  display: block;
+}
 .header .links .burger_icon {
   width: 30px;
   display: flex;
@@ -76,5 +79,37 @@ body {
 .header .links .burger_icon span:last-child {
   width: 100%;
 }
+.header .links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background-color: #f6f6f6;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+}
 
+.header .links ul::before {
+  content: "";
+  border: 10px solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+.header .links ul a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  color: #333;
+  transition: 0.3s;
+}
+.header .links ul a:hover {
+  margin-left: 15px;
+}
+.header .links ul li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
 /* end Header  */
