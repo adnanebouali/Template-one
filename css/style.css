@@ -1,3 +1,6 @@
+:root {
+  --miancolor: #56cbb7;
+}
 /* start global rules */
 * {
   -webkit-box-sizing: border-box;
@@ -51,6 +54,7 @@ body {
 }
 .header .links {
   position: relative;
+  z-index: 1;
 }
 .header .links:hover .burger_icon span:nth-child(2) {
   width: 100%;
@@ -113,3 +117,59 @@ body {
   border-bottom: 1px solid #ddd;
 }
 /* End Header....  */
+
+/* start landingsection */
+.landing {
+  background-image: url(/images/landing.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+.landing .intro {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
+}
+.landing .intro p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+.landing .intro h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--miancolor);
+}
+/* end landingsection  */
+/* start features */
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+}
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.features .feat {
+  padding: 20px;
+  text-align: center;
+}
+.features .feat i {
+  color: var(--miancolor);
+}
+.features .feat h3 {
+  font-weight: 800;
+  margin: 30px 0;
+}
+.features .feat p {
+  line-height: 1.8;
+  color: #777;
+  font-size: 17px;
+}
+/* end features */ ;
