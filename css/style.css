@@ -391,7 +391,7 @@ body {
   font-size: 35px;
   font-weight: 800;
   color: var(--secondry-color);
-  letter-spacing: -2;
+  letter-spacing: -2px;
   margin-bottom: 15px;
 }
 .contact .info .link {
@@ -416,4 +416,19 @@ body {
     font-size: 25px;
   }
 }
+
 /* End contact */
+
+/* Start footer */
+.footer {
+  background-color: var(--secondry-color);
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.footer span {
+  font-weight: bold;
+  color: var(--miancolor);
+}
+/* End footer */
