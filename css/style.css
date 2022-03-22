@@ -376,3 +376,44 @@ body {
   color: #777;
 }
 /* End about */
+/* Start contact */
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+.contact .info {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+}
+.contact .info .label {
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--secondry-color);
+  letter-spacing: -2;
+  margin-bottom: 15px;
+}
+.contact .info .link {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 35px;
+  color: var(--miancolor);
+}
+.contact .info .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.contact .info .social i {
+  margin-left: 10px;
+  color: var(--secondry-color);
+}
+@media (max-width: 767px) {
+  .contact .info .link,
+  .contact .info .label {
+    font-size: 25px;
+  }
+}
+/* End contact */
