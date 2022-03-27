@@ -189,6 +189,7 @@ body {
   color: #777;
   font-size: 17px;
 }
+
 /* end features */
 /* start services */
 .special-heading {
@@ -419,7 +420,25 @@ body {
     font-size: 25px;
   }
 }
+@media (max-width: 320px) {
+  .features .feat {
+    padding-right: 25px;
+  }
 
+  .services .services-content .col {
+    padding-right: 10px;
+  }
+  .portfolio-content .card {
+    max-width: 290px;
+  }
+  .contact .info .link,
+  .contact .info .label {
+    font-size: 22px;
+  }
+  .contact .info .social {
+    font-size: 15px;
+  }
+}
 /* End contact */
 
 /* Start footer */
